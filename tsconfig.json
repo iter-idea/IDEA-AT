@@ -1,0 +1,10 @@
+{
+  "extends": "./node_modules/@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "useDefineForClassFields": false,
+    "declaration": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "outDir": "dist"
+  }
+}

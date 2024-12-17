@@ -1,0 +1,43 @@
+{
+  "name": "idea-at",
+  "version": "0.0.1",
+  "description": "Automated Testing suite for IDEA projects",
+  "license": "MPL-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts",
+    "compile": "tsc --build",
+    "docs": "typedoc index.ts --customCss ./docs.style.css",
+    "build": "./build.sh",
+    "publishPackage": "./build.sh && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iter-idea/IDEA-AT.git"
+  },
+  "keywords": [
+    "idea",
+    "testing",
+    "playwright",
+    "ionic-framework",
+    "angular"
+  ],
+  "author": "ITER IDEA <info@iter-idea.com> (https://iter-idea.com)",
+  "bugs": {
+    "url": "https://github.com/iter-idea/IDEA-AT/issues"
+  },
+  "homepage": "https://iter-idea.github.io/IDEA-AT",
+  "peerDependencies": {
+    "@playwright/test": "^1.49.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.14.11",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^8.57.0",
+    "typedoc": "^0.26.5",
+    "typescript": "^5.5.2"
+  }
+}

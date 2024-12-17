@@ -1,0 +1,16 @@
+# IDEA .npmignore template
+
+.vscode/
+docs/
+node_modules/
+/src/
+.eslintrc.js
+.npmignore
+.gitignore
+.prettierrc
+HOW-TO-RELEASE.md
+
+*.css
+*.sh
+*.json
+# package.json is always included
