@@ -40,19 +40,18 @@ export const toggleChecksOnIDEACheckerByText = async (page: Page, input: Locator
 };
 
 /**
- * Clicks on a select multiple with priority element and selects multiple options by text
- * NOTE: as of today, it's a custom element (not part of IDEA Ionic Extra)
+ * Clicks on an IDEA inline checker element and selects multiple options by text
  * @param page - The Playwright Page object
  * @param input - The input Locator to click on
  * @param optionsByText - Array of option text strings to select
  */
-export const clickOnSelectMultipleWithPriorityByText = async (
+export const clickOnInlineCheckerByText = async (
   page: Page,
   input: Locator,
   optionsByText: string[]
 ): Promise<void> => {
   await input.click();
-  await page.waitForSelector('app-select-multiple-with-priority', { state: 'visible' });
+  await page.waitForSelector('idea-inline-checker', { state: 'visible' });
   for (const text of optionsByText) await page.click(`ion-popover ion-item >> text=${text}`);
   const backdrop = page.locator('ion-backdrop');
   await expect(backdrop).toBeVisible();
