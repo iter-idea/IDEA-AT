@@ -1,6 +1,6 @@
 {
   "name": "idea-at",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automated Testing suite for IDEA projects",
   "license": "MPL-2.0",
   "main": "dist/index.js",
