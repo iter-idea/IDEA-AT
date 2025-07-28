@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "eslint --ext .ts",
+    "lint": "eslint '**/*.{ts,tsx}'",
     "compile": "tsc --build",
     "docs": "typedoc index.ts --customCss ./docs.style.css",
     "build": "./build.sh",
@@ -29,15 +29,15 @@
   },
   "homepage": "https://iter-idea.github.io/IDEA-AT",
   "peerDependencies": {
-    "@playwright/test": "^1.49.1"
+    "@playwright/test": "^1.54.1"
   },
   "devDependencies": {
-    "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^20.14.11",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
-    "eslint": "^8.57.0",
-    "typedoc": "^0.26.5",
-    "typescript": "^5.5.2"
+    "@tsconfig/node20": "^20.1.6",
+    "@types/node": "^22.16.5",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
+    "typedoc": "^0.28.8",
+    "typescript": "^5.8.3"
   }
 }
